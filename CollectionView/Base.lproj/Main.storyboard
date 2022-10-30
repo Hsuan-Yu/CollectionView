@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S6t-fc-pxR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--World Monsters-->
+        <scene sceneID="fjh-V9-bV6">
+            <objects>
+                <viewController id="x2W-4b-BrC" customClass="HorrorMonster_VC" customModule="CollectionView_HorrorMonster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ceS-T3-l1c">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0-Homepage" translatesAutoresizingMaskIntoConstraints="NO" id="pjE-8P-WIe">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Bk-SJ-766">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="e52-75-lqZ">
+                                <rect key="frame" x="39.333333333333343" y="292" width="314.66666666666663" height="268"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWy-xv-F2U">
+                                        <rect key="frame" x="0.0" y="0.0" width="314.66666666666669" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Dragon's Dogma">
+                                            <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="MonsterButton:" destination="x2W-4b-BrC" eventType="touchUpInside" id="RTf-pd-yld"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFB-M2-n77">
+                                        <rect key="frame" x="41.666666666666671" y="68" width="231.33333333333331" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Elden Ring">
+                                            <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="MonsterButton:" destination="x2W-4b-BrC" eventType="touchUpInside" id="kGu-Fk-Jce"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3NK-tX-pDL">
+                                        <rect key="frame" x="49.333333333333343" y="136" width="216.00000000000003" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Silent Hill">
+                                            <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="MonsterButton:" destination="x2W-4b-BrC" eventType="touchUpInside" id="PPA-Zg-9OB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxU-3u-5rb">
+                                        <rect key="frame" x="44.999999999999986" y="204" width="224.33333333333331" height="64"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Dark Souls">
+                                            <fontDescription key="titleFontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="MonsterButton:" destination="x2W-4b-BrC" eventType="touchUpInside" id="15s-Bg-Kms"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GEJ-Jz-krM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="e52-75-lqZ" firstAttribute="centerY" secondItem="ceS-T3-l1c" secondAttribute="centerY" id="ppT-WV-cjw"/>
+                            <constraint firstItem="e52-75-lqZ" firstAttribute="centerX" secondItem="ceS-T3-l1c" secondAttribute="centerX" id="xjZ-54-Vku"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="World Monsters" style="editor" id="WeV-RS-AB7"/>
+                    <connections>
+                        <outlet property="DarkSouls" destination="vxU-3u-5rb" id="MT1-uL-3K0"/>
+                        <outlet property="DragonsDogma" destination="EWy-xv-F2U" id="YDS-Xy-Siw"/>
+                        <outlet property="EldenRing" destination="PFB-M2-n77" id="LK9-D7-eyW"/>
+                        <outlet property="SilentHill" destination="3NK-tX-pDL" id="OUc-N2-Y09"/>
+                        <segue destination="8fO-eH-6zE" kind="show" identifier="showMonster" destinationCreationSelector="showMonsterSegue:sender:" id="crg-Zn-g9L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25X-MK-0da" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1356" y="-820"/>
+        </scene>
+        <!--MonsterCVC-->
+        <scene sceneID="xCu-XU-wZa">
+            <objects>
+                <collectionViewController id="8fO-eH-6zE" customClass="Monster_CVC" customModule="CollectionView_HorrorMonster" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HCm-ji-ZjP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Lnd-Yr-gRV">
+                            <size key="itemSize" width="120" height="250"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0-Homepage" id="q6a-aI-4Qi">
+                            <rect key="frame" x="0.0" y="-103" width="393" height="852"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MonsterCVCell" id="B4p-cS-i92" customClass="Monster_CVCell" customModule="CollectionView_HorrorMonster" customModuleProvider="target">
+                                <rect key="frame" x="5" y="0.0" width="120" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="GGv-nx-c0f">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="250"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNE-Q3-X3T">
+                                            <rect key="frame" x="0.0" y="-25" width="120" height="225"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bx-14-fpe">
+                                            <rect key="frame" x="0.0" y="208" width="120" height="15"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="120" height="250"/>
+                                <connections>
+                                    <outlet property="picImageView" destination="UNE-Q3-X3T" id="Kry-Ve-shN"/>
+                                    <outlet property="picLabel" destination="7bx-14-fpe" id="e3g-sV-UfS"/>
+                                    <segue destination="0N0-7W-nx9" kind="show" destinationCreationSelector="showBigPicSegue:" id="qXk-w8-0Kh"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="8fO-eH-6zE" id="fOX-4u-ZoV"/>
+                            <outlet property="delegate" destination="8fO-eH-6zE" id="a39-Oh-kZX"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="1DX-Zj-Ybj"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHY-2T-3Fn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150.3816793893129" y="-820.4225352112677"/>
+        </scene>
+        <!--Big PicVC-->
+        <scene sceneID="e0M-cA-lyf">
+            <objects>
+                <viewController id="0N0-7W-nx9" customClass="BigPic_VC" customModule="CollectionView_HorrorMonster" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pDo-Sw-0vO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0-Homepage" translatesAutoresizingMaskIntoConstraints="NO" id="Hde-fv-CI8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OMY-C7-pLI">
+                                <rect key="frame" x="6.6666666666666572" y="103" width="380" height="450"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="2Wb-7a-wGx"/>
+                                    <constraint firstAttribute="height" constant="450" id="Pcu-b6-Eh4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHB-YN-jJf">
+                                <rect key="frame" x="165.66666666666666" y="563" width="62" height="30"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wQQ-iy-384"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KHB-YN-jJf" firstAttribute="top" secondItem="OMY-C7-pLI" secondAttribute="bottom" constant="10" id="1Oe-2V-spB"/>
+                            <constraint firstItem="KHB-YN-jJf" firstAttribute="centerX" secondItem="pDo-Sw-0vO" secondAttribute="centerX" id="72x-W3-e6c"/>
+                            <constraint firstItem="OMY-C7-pLI" firstAttribute="centerX" secondItem="pDo-Sw-0vO" secondAttribute="centerX" id="TKY-Sj-Qec"/>
+                            <constraint firstItem="OMY-C7-pLI" firstAttribute="top" secondItem="wQQ-iy-384" secondAttribute="top" id="oFU-sK-q2G"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hn1-TG-2bE"/>
+                    <connections>
+                        <outlet property="bigPicImageView" destination="OMY-C7-pLI" id="Sl0-el-x2g"/>
+                        <outlet property="bigPicName" destination="KHB-YN-jJf" id="U4Y-TZ-4N6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uew-JE-uyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956.4885496183206" y="-820.4225352112677"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CzS-X8-YfI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="S6t-fc-pxR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lih-vy-tsZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="40"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="x2W-4b-BrC" kind="relationship" relationship="rootViewController" id="NDX-dl-G1W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="576-M2-bhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427.69230769230768" y="-819.66824644549763"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0-Homepage" width="347" height="518"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
